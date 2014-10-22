@@ -47,3 +47,7 @@ Thermostat.prototype.tooglePowerSaving = function() {
 		return this.isPowerSaverOn = true;
 	};
 };
+
+Thermostat.prototype.resetTemp = function() {
+	return this.temperature = 20;
+};
