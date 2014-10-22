@@ -22,6 +22,8 @@
     padding:5px 28px;
     text-decoration:none;
     text-shadow:0px 1px 0px #ded17c;
+    margin-bottom: 0.6%;
+    margin-left: 44.5%;
 }
 .decrease_temperature:hover {
     background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2ab1e), color-stop(1, #f0c911));
