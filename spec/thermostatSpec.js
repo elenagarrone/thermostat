@@ -21,11 +21,11 @@ describe('Thermostat', function(){
 			expect(thermostat.isPowerSaverOn).toBe(true);
 		});
 
-		xit('power save on has a max temperature of 25', function(){
+		it('power save on has a max temperature of 25', function(){
 			expect(thermostat.maxTemp()).toEqual(25);
 		});
 
-		xit('power save off has a max temperature of 32', function(){
+		it('power save off has a max temperature of 32', function(){
 			thermostat.tooglePowerSaving();
 			expect(thermostat.maxTemp()).toEqual(32);
 		});

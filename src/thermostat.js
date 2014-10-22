@@ -26,9 +26,12 @@ Thermostat.prototype.decreaseTemperatureBy = function(degrees) {
 	this.temperature -= degrees;
 };
 
-Thermostat.prototype.powerSavingMaxTemp = function() {
+Thermostat.prototype.maxTemp = function() {
 	if(this.isPowerSaverOn) {
 		this.increaseTemperatureBy(5);
+		return this.temperature;
+	} else {
+		this.increaseTemperatureBy(12);
 		return this.temperature;
 	};
 };
