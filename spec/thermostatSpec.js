@@ -5,7 +5,7 @@ describe('Thermostat', function(){
 
 	beforeEach(function(){
 		thermostat = new Thermostat();
-	})
+	});
 
 	describe('by default', function(){
 
@@ -16,19 +16,23 @@ describe('Thermostat', function(){
 		it('it has a minimum temperature', function(){
 			expect(thermostat.minTemperature).toEqual(10)
 		});
+		
+		it('it has a maximum temperature', function(){
+			expect(thermostat.maximumTemperature).toEqual(25)
+		});
 
 		it('power saving mode(TM) will be on', function(){
 			expect(thermostat.isPowerSaverOn).toBe(true);
 		});
 
-		it('power save on has a max temperature of 25', function(){
-			expect(thermostat.maxTemp()).toEqual(25);
-		});
+		// it('power save on has a max temperature of 25', function(){
+		// 	expect(thermostat.maxTemp()).toEqual(25);
+		// });
 
-		it('power save off has a max temperature of 32', function(){
-			thermostat.tooglePowerSaving();
-			expect(thermostat.maxTemp()).toEqual(32);
-		});
+		// it('power save off has a max temperature of 32', function(){
+		// 	thermostat.tooglePowerSaving();
+		// 	expect(thermostat.maxTemp()).toEqual(32);
+		// });
 
 		it('can increase the temperature by one degree', function(){
 			expect(thermostat.increaseTemperature()).toEqual(21);

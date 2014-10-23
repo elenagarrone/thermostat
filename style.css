@@ -3,12 +3,23 @@ html, body { height: 100%; }
 body { background: #f2f2f2; }
 
 .thermostat {
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    margin-left: 45%;
+    margin-right: 50%;
+    text-align: center;;
 }
 
-.container { width: 300px; margin: 10px auto 0; }
-.de .den, .de .dene, .de .denem, .de .deneme { position: absolute; left: 50%; top: 50%; }
+section.checkbox {
+    margin-left: 0px;
+}
+
+
+.container { width: 300px; margin: 10px auto 0; border: 2px black solid; }
+
+.de .den, .de .dene, .de .denem, .de .deneme { 
+    position: absolute; 
+    left: 50%; top: 50%; }
+
 .de {
     position: relative;
     width: 240px;
@@ -81,5 +92,8 @@ section#title {
     font-family: 'Dosis';
     font-size: 160%;
     color: #555;
-    margin-left: 43%;
+}
+
+#rainbowbutton {
+    text-align: center;
 }

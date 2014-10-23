@@ -10,14 +10,15 @@
       <link rel="stylesheet" type="text/css" href="powersaverCheckbox.css">
     </head>
 
-    <section class="thermostat">
+
+    <div class="thermostat">
 
         <section id="title">
           <h1>yourThermostat</h1>
         </section>
 
-        <section>
-          <div class="container">
+        <section id="rainbowbutton">
+ 
               <div class="de">
                   <div class="den">
                     <div class="dene">
@@ -29,20 +30,27 @@
                     </div>
                   </div>
               </div>
-          </div>
         </section>  
 
 
 
-        <ul style="list-style-type:none">
-          <li><a href="#" class="increase_temperature">hotter</a></li>
-          <li><a href="#" class="decrease_temperature">colder</a></li>
-          <li><a href="#" class="reset">reset</a></li>
-<!--           <input class="css-checkbox" type="checkbox" id="c1" name="cc" />
-          <label for="c1">Check Box 1</label> -->
-        </ul>
+<!--         <ul style="list-style-type:none" class='buttons'>
+ -->      
+          <br><a href="#" class="increase_temperature">hotter</a>
+          <br><a href="#" class="decrease_temperature">colder</a>
+          <br><a href="#" class="reset">reset!</a>
+          
+          
+            <section class="checkbox">
+              <input class="css-checkbox" type="checkbox" id="c1" name="power_saver_on" />
+              <label class="css-label" for="c1">Power Saver ON</label>
+            </section>
+      
 
-    </section> 
+
+        </div>
+
+    </div>
 
 
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>

@@ -16,4 +16,8 @@ ThermostatView.prototype.bindTo = function(selector, obj, func) {
 $(document).ready(function() {
   new ThermostatView('h2.numbers');
 
+  $('.checkbox').prop('checked', function(){
+    this.thermostat.tooglePowerSaving;
+  });
+
 });
