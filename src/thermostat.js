@@ -14,11 +14,11 @@ Thermostat.prototype.increaseTemperature = function() {
 };
 
 Thermostat.prototype.increaseTemperatureBy = function(degrees) {
-	// if((this.temperature + degrees) > this.maxTemp()) {
-	// 	return this.maxTemp();
-	// } else {
+	if((this.temperature + degrees) > this.maximumTemperature) {
+		return this.maximumTemperature;
+	} else {
 		return this.temperature += degrees;
-	// };
+	};
 };
 
 Thermostat.prototype.decreaseTemperature = function() {
@@ -31,19 +31,10 @@ Thermostat.prototype.decreaseTemperatureBy = function(degrees) {
 	return this.temperature -= degrees;
 };
 
-Thermostat.prototype.maxTemp = function() {
-	if(this.isPowerSaverOn) {
-		// this.increaseTemperatureBy(5);
-		return this.temperature;
-	} else {
-		// this.increaseTemperatureBy(12);
-		return this.temperature;
-	};
+Thermostat.prototype.tempPowerSaverOff = function() {
+	this.tooglePowerSaving = false;
+	return this.temperature = 32;
 };
-
-// Thermostat.prototype.maxTemp = function() {
-// 	return 25;
-// };
 
 Thermostat.prototype.tooglePowerSaving = function() {
 	if(this.isPowerSaverOn) {
