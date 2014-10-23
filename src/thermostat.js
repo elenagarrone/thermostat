@@ -35,13 +35,13 @@ Thermostat.prototype.decreaseTemperatureBy = function(degrees) {
 	};
 };
 
-Thermostat.prototype.tempPowerSaverOff = function() {
-	this.tooglePowerSaving = false;
-	return this.temperature = 32;
+Thermostat.prototype.maxTempPowerSaverOff = function() {
+	return this.maximumTemperature = 32;
 };
 
 Thermostat.prototype.tooglePowerSaving = function() {
 	if(this.isPowerSaverOn) {
+		this.maxTempPowerSaverOff();
 		return this.isPowerSaverOn = false;
 	} else {
 		return this.isPowerSaverOn = true;

@@ -26,7 +26,7 @@ describe('Thermostat', function(){
 		});
 
 		it('power save off has a max temperature of 32', function(){
-			expect(thermostat.tempPowerSaverOff()).toEqual(32);
+			expect(thermostat.maxTempPowerSaverOff()).toEqual(32);
 		});
 
 		it('can increase the temperature by one degree', function(){
@@ -41,11 +41,22 @@ describe('Thermostat', function(){
 
 	describe('custom options', function(){
 
-		it('can increase the temperature by 10', function(){
+		it('can increase the temperature by 3', function(){
 			expect(thermostat.increaseTemperatureBy(3)).toEqual(23);
 		});
 
-		it('can decrease the temperature by 12', function(){
+		it('when the power saver is on the temperature cannot be more than 25 degrees', function(){
+			expect(thermostat.increaseTemperatureBy(8)).not.toEqual(28);
+			expect(thermostat.increaseTemperatureBy(8)).toEqual(25);
+		});
+
+		it('when the power saver is off the temperature cannot be more than 32 degrees', function(){
+			thermostat.tooglePowerSaving();
+			expect(thermostat.increaseTemperatureBy(15)).not.toEqual(35);
+			expect(thermostat.increaseTemperatureBy(15)).toEqual(32);
+		});
+
+		it('can decrease the temperature by 8', function(){
 			expect(thermostat.decreaseTemperatureBy(8)).toEqual(12);
 		});
 
