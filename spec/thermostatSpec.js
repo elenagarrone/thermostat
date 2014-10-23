@@ -46,7 +46,7 @@ describe('Thermostat', function(){
 		});
 
 		it('can decrease the temperature by 12', function(){
-			expect(thermostat.decreaseTemperatureBy(12)).toEqual(8);
+			expect(thermostat.decreaseTemperatureBy(8)).toEqual(12);
 		});
 
 		it('power saving can be switched off', function() {

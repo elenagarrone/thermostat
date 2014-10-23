@@ -28,7 +28,11 @@ Thermostat.prototype.decreaseTemperature = function() {
 };
 
 Thermostat.prototype.decreaseTemperatureBy = function(degrees) {
-	return this.temperature -= degrees;
+	if((this.temperature - degrees) < this.minTemperature) {
+		return this.minTemperature;
+	} else {
+		return this.temperature -= degrees;
+	};
 };
 
 Thermostat.prototype.tempPowerSaverOff = function() {
