@@ -20,10 +20,14 @@ ThermostatView.prototype.bindTo = function(selector, obj, func) {
 };
 
 $(document).ready(function() {
-  new ThermostatView('h2.numbers');
+  window.view = new ThermostatView('h2.numbers');
 
-  $('.checkbox').prop('checked', function(){
-    this.thermostat.tooglePowerSaving;
+  $('#c1').change(function(){
+    window.view.thermostat.tooglePowerSaving();
+  });
+
+  $('.css-label').on('click', function() {
+    window.view.thermostat.tooglePowerSaving();
   });
 
 });

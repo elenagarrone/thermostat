@@ -5,8 +5,6 @@ function Thermostat(){
 	this.maximumTemperature = 25;
 };
 
-
-
 Thermostat.prototype.increaseTemperature = function() {
 	// this.temperature = this.temperature + 1;
 	// this.temperature++
@@ -14,7 +12,7 @@ Thermostat.prototype.increaseTemperature = function() {
 };
 
 Thermostat.prototype.increaseTemperatureBy = function(degrees) {
-	if((this.temperature + degrees) > this.maximumTemperature) {
+	if((this.temperature + degrees) >= this.maximumTemperature) {
 		return this.maximumTemperature;
 	} else {
 		return this.temperature += degrees;
@@ -41,9 +39,9 @@ Thermostat.prototype.maxTempPowerSaverOff = function() {
 
 Thermostat.prototype.tooglePowerSaving = function() {
 	if(this.isPowerSaverOn) {
-		this.maxTempPowerSaverOff();
 		return this.isPowerSaverOn = false;
 	} else {
+		this.maxTempPowerSaverOff();
 		return this.isPowerSaverOn = true;
 	};
 };
