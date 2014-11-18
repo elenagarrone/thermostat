@@ -26,7 +26,7 @@ $(document).ready(function() {
     window.view.thermostat.tooglePowerSaving();
   });
 
-  $('.css-label').on('click', function() {
+  $('#c1').on('unchecked', function(){
     window.view.thermostat.tooglePowerSaving();
   });
 

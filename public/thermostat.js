@@ -1,6 +1,6 @@
 function Thermostat(){
 	this.temperature = 20;
-	this.isPowerSaverOn = true;
+	this.isPowerSaverOn = false;
 	this.minTemperature = 10;
 	this.maximumTemperature = 25;
 };
