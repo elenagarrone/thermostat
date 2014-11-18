@@ -2,7 +2,7 @@ Thermostat
 ==========
 ----
 
-<img src='http://i60.tinypic.com/2uyhzbl.jpg'>
+<img src='http://i57.tinypic.com/14mc0pj.jpg'>
 
 Have a look: https://your-thermostat.herokuapp.com/
 
