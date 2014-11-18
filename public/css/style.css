@@ -172,6 +172,12 @@ section.checkbox {
     width: 160px;
 }
 
+.css-label {
+    font-family:Courier New;
+    color:#c92200;
+    font-size:15px;
+}
+
 /*========================================
   ALL THERMOSTAT WITH WRITINGS AND BOTTONS
  ========================================*/
