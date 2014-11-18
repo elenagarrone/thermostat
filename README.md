@@ -1,6 +1,11 @@
 Thermostat
 ==========
 ----
+
+<img src='http://i60.tinypic.com/2uyhzbl.jpg'>
+
+Have a look: https://your-thermostat.herokuapp.com/
+
 ####Specifications:
 
 - [X] Thermostat starts at 20 degrees
