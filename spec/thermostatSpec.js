@@ -76,6 +76,6 @@ describe('Thermostat', function(){
 			thermostat.resetTemp();
 			expect(thermostat.temperature).toEqual(20)
 		});
-
+		
 	});
 });

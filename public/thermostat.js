@@ -1,13 +1,11 @@
 function Thermostat(){
 	this.temperature = 20;
-	this.isPowerSaverOn = false;
+	this.isPowerSaverOn = true;
 	this.minTemperature = 10;
 	this.maximumTemperature = 25;
 };
 
 Thermostat.prototype.increaseTemperature = function() {
-	// this.temperature = this.temperature + 1;
-	// this.temperature++
 	return this.increaseTemperatureBy(1);
 };
 
@@ -20,8 +18,6 @@ Thermostat.prototype.increaseTemperatureBy = function(degrees) {
 };
 
 Thermostat.prototype.decreaseTemperature = function() {
-	// this.temperature = this.temperature + 1;
-	// this.temperature--;
 	return this.decreaseTemperatureBy(1)
 };
 
@@ -39,9 +35,10 @@ Thermostat.prototype.maxTempPowerSaverOff = function() {
 
 Thermostat.prototype.tooglePowerSaving = function() {
 	if(this.isPowerSaverOn) {
+		this.maxTempPowerSaverOff();
 		return this.isPowerSaverOn = false;
 	} else {
-		this.maxTempPowerSaverOff();
+		this.maximumTemperature = 25
 		return this.isPowerSaverOn = true;
 	};
 };

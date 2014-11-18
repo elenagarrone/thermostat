@@ -23,10 +23,12 @@ $(document).ready(function() {
   window.view = new ThermostatView('h2.numbers');
 
   $('#c1').change(function(){
+    console.log(window.view.thermostat)
     window.view.thermostat.tooglePowerSaving();
   });
 
   $('#c1').on('unchecked', function(){
+    console.log(window.view.thermostat)
     window.view.thermostat.tooglePowerSaving();
   });
 
