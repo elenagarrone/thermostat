@@ -1,7 +1,7 @@
 Thermostat
 ==========
-Specification:
---------------
+----
+####Specifications:
 
 - Thermostat starts at 20 degrees
 - You can increase the temp with the up button
@@ -13,14 +13,28 @@ Specification:
 - If power saving mode is off, the maximum temperature is 32 degrees
 - You can reset the temperature to 20 by hitting the reset button
 
-Left to do:
-- The thermostat should color the display based on energy usage
-- < 18 is green,
-- < 25 is yellow,
-- otherwise red
+####Technologies:
+- Javascript
+- Sinatra
+- JQuery
+- HTML/CSS
+- Jasmine
 
-Tools
------
-Javascript
-Jasmine
-JQuery
+####Testing:
+Clone the repo:
+```shell
+$ git clone https://github.com/elenagarrone/thermostat.git
+```
+Change into the directory:
+```shell
+$ cd thermostat
+```
+Run:
+```shell
+open SpecRunner.html
+```
+####Left to do:
+- [] The thermostat should color the display based on energy usage
+- [] < 18 is green,
+- [] < 25 is yellow,
+- [] otherwise red
