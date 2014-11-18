@@ -34,7 +34,7 @@ Run:
 open SpecRunner.html
 ```
 ####Left to do:
-- [] The thermostat should color the display based on energy usage
-- [] < 18 is green,
-- [] < 25 is yellow,
-- [] otherwise red
+- [ ] The thermostat should color the display based on energy usage
+- [ ] < 18 is green,
+- [ ] < 25 is yellow,
+- [ ] otherwise red
