@@ -3,14 +3,12 @@
   <body>
 
     <head>
+      <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
       <link rel="stylesheet" type="text/css" href="css/style.css">
-      <link rel="stylesheet" type="text/css" href="css/buttonCold.css">
-      <link rel="stylesheet" type="text/css" href="css/buttonHot.css">
-      <link rel="stylesheet" type="text/css" href="css/buttonReset.css">
       <link rel="stylesheet" type="text/css" href="css/powersaverCheckbox.css">
     </head>
 
-
+  <section class='all'>
     <div class="thermostat">
 
         <section id="title">
@@ -32,25 +30,28 @@
               </div>
         </section>  
 
+    </div>
+
 
 
 <!--         <ul style="list-style-type:none" class='buttons'>
  -->      
-          <br><a href="#" class="increase_temperature">hotter</a>
-          <br><a href="#" class="decrease_temperature">colder</a>
-          <br><a href="#" class="reset">reset!</a>
+
+     <section class='buttons'>
+          <br><a href="#" class="increase_temperature pure-button">hotter</a>
+          <br><a href="#" class="decrease_temperature pure-button">colder</a>
+          <br><a href="#" class="reset pure-button">reset!</a>
+    </section>
           
+          <section class="checkbox">
+            <input class="css-checkbox" type="checkbox" id="c1" name="power_saver_on" />
+            <label class="css-label" for="c1">Power Saver OFF</label>
+          </section>
           
-            <section class="checkbox">
-              <input class="css-checkbox" type="checkbox" id="c1" name="power_saver_on" />
-              <label class="css-label" for="c1">Power Saver OFF</label>
-            </section>
-      
+ </section>
 
 
-        </div>
-
-    </div>
+       
 
 
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>

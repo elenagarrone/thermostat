@@ -2,21 +2,40 @@
 html, body { height: 100%; }
 body { background: #f2f2f2; }
 
-section h1 {
+/*============
+    TITLE
+ ============*/
+
+h1 {
+    margin-bottom: 20%;
     text-align:center;
+    font-family: 'Dosis';
+    font-size: 200%;
+    color: #555;
 }
 
-.thermostat {
-    position: absolute;
-    margin-left: 45%;
-    margin-right: 50%;
-    text-align: center;;
-}
+/*=============
+    CHECKBOX
+ =============*/
 
 section.checkbox {
-    margin-left: 0px;
+    margin-top: 1.8%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
 }
 
+/*==============
+    THERMOSTAT
+ ==============*/
+
+.thermostat {
+    width:240px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/*=============*/
 
 .container { width: 300px; margin: 10px auto 0; border: 2px black solid; }
 
@@ -85,15 +104,62 @@ section.checkbox {
     font-family: 'Dosis';
     color: #555;
     font-size: 100%;
-    margin-top: 10%;
-}
-
-section#title {
-    font-family: 'Dosis';
-    font-size: 160%;
-    color: #555;
+    margin-top: 3%;
 }
 
 #rainbowbutton {
     text-align: center;
+}
+
+/*===============
+    BUTTONS
+ ===============*/
+
+.increase_temperature {
+    width: 76px;
+    border: 1px solid #D73A0C;
+    margin-bottom:5%;
+    background: rgb(223, 117, 20);
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    width: 
+}
+
+.decrease_temperature {
+    width: 76px;
+    border: 1px solid #D73A0C;
+    margin-bottom:5%;
+    background: rgb(223, 117, 20);
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.reset {
+    width: 76px;
+    border: 1px solid #D73A0C;
+    background: rgb(223, 117, 20);
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2%;
+}
+
+section.buttons {
+    margin-top: 1%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 108px;
+}
+
+/*========================================
+  ALL THERMOSTAT WITH WRITINGS AND BOTTONS
+ ========================================*/
+
+section.all{
+    width: 240px;
+    margin: auto;
+    margin-top: 13%;
 }
