@@ -1,5 +1,11 @@
 html, body { height: 100%; }
-body { background: #f2f2f2; }
+
+body {
+    width: 240px;
+    margin: auto;
+    margin-top: 13%;
+  background: #f2f2f2;
+}
 
 /*============
     TITLE
@@ -18,21 +24,20 @@ h1 {
     THERMOSTAT
  ==============*/
 
-.thermostat {
+section.thermostat {
     width:240px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-/*=============*/
 
-.container { width: 300px; margin: 10px auto 0; border: 2px black solid; }
+article.container { width: 300px; margin: 10px auto 0; border: 2px black solid; }
 
-.de .den, .de .dene, .de .denem, .de .deneme { 
-    position: absolute; 
+.de .den, .de .dene, .de .denem, .de .deneme {
+    position: absolute;
     left: 50%; top: 50%; }
 
-.de {
+article.de {
     position: relative;
     width: 240px;
     height: 240px;
@@ -41,7 +46,7 @@ h1 {
     background-color: transparent;
     margin-bottom: 15%;
 }
-.den {
+article.den {
     position: relative;
     width: 210px;
     height: 210px;
@@ -51,7 +56,7 @@ h1 {
     background: yellow;
     position:relative;
 }
-.dene {
+article.dene {
     width: 180px;
     height: 180px;
     margin: -90px 0 0 -90px;
@@ -63,7 +68,7 @@ h1 {
     background: -webkit-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
     background: -o-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
 }
-.denem {
+article.denem {
     width: 160px;
     height: 160px;
     margin: -80px 0 0 -80px;
@@ -74,7 +79,7 @@ h1 {
     background: -webkit-linear-gradient(top, #cbd5d6 0%, #f2f6f5 100%);
 }
 
-.deneme {
+article.deneme {
     padding: 3px 10px 0 10px;
     width: 120px;
     height: 137px;
@@ -87,70 +92,22 @@ h1 {
     font-weight: 400;
     text-align: center;
 }
-.deneme span { font-size: 30px; font-weight: 200; }
-.deneme strong { position: absolute; right: 10px; top: 25px; font-size: 34px; }
-.numbers {
+article.deneme span { font-size: 30px; font-weight: 200; }
+article.deneme strong { position: absolute; right: 10px; top: 25px; font-size: 34px; }
+h2.numbers {
     font-family: 'Dosis';
     color: #555;
     font-size: 100%;
     margin-top: 3%;
 }
 
-#rainbowbutton {
+section#rainbowbutton {
     text-align: center;
 }
 
 /*===============
     BUTTONS
  ===============*/
-
-.increase_temperature {
-    display:block;
-    width: 108px;
-    height: 30px;
-    text-decoration: none;
-    text-align:center;
-    display:table-cell;
-    vertical-align:middle;
-    border: 1px solid #D73A0C;
-    margin-bottom:5%;
-    background: rgb(223, 117, 20);
-    color: white;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-.decrease_temperature {
-    display:block;
-    text-decoration: none;
-    text-align:center;
-    display:table-cell;
-    vertical-align:middle;
-    width: 108px;
-    height: 30px;
-    border: 1px solid #D73A0C;
-    margin-bottom:5%;
-    background: rgb(223, 117, 20);
-    color: white;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-.reset {
-    display:block;
-    text-decoration: none;
-    text-align:center;
-    display:table-cell;
-    vertical-align:middle;
-    width: 108px;
-    height: 30px;
-    border: 1px solid #D73A0C;
-    background: rgb(223, 117, 20);
-    color: white;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    margin-bottom: 2%;
-}
 
 section.buttons {
     width:108px;
@@ -159,6 +116,22 @@ section.buttons {
     position: relative;
     margin-right: auto;
     margin-left: auto;
+}
+
+section.buttons a {
+    display:block;
+    width: 108px;
+    height: 30px;
+    text-decoration: none;
+    text-align:center;
+    display:table-cell;
+    vertical-align:middle;
+    border: 1px solid #D73A0C;
+    margin-bottom:5%;
+    background: rgb(223, 117, 20);
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 /*=============
@@ -172,18 +145,8 @@ section.checkbox {
     width: 160px;
 }
 
-.css-label {
+section.checkbox label.css-label {
     font-family:Courier New;
     color:#c92200;
     font-size:15px;
-}
-
-/*========================================
-  ALL THERMOSTAT WITH WRITINGS AND BOTTONS
- ========================================*/
-
-section.all{
-    width: 240px;
-    margin: auto;
-    margin-top: 13%;
 }
