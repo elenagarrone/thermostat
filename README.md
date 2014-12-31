@@ -1,12 +1,14 @@
+[![Code Climate](https://codeclimate.com/github/elenagarrone/thermostat/badges/gpa.svg)](https://codeclimate.com/github/elenagarrone/thermostat)
+
 Thermostat
 ==========
-----
+During the sixth week of Makers Academy we had to build a thermostat using JavaScript and JQuery.
 
 <img src='http://i57.tinypic.com/14mc0pj.jpg'>
 
-Have a look: https://your-thermostat.herokuapp.com/
 
-####Specifications:
+Specification:
+--------------
 
 - [X] Thermostat starts at 20 degrees
 - [X] You can increase the temp with the up button
@@ -22,14 +24,24 @@ Have a look: https://your-thermostat.herokuapp.com/
 - [X] < 25 is yellow,
 - [X] otherwise red
 
-####Technologies:
+Technologies:
+-------------
 - Javascript
 - Sinatra
 - JQuery
 - HTML/CSS
 - Jasmine
 
-####Testing:
+On Heroku:
+----------
+https://your-thermostat.herokuapp.com/
+
+To do:
+------
+- try to refactor duplicate code in thermostat.js:12…16 and thermostat.js:24…28
+
+How to use:
+-----------
 Clone the repo:
 ```shell
 $ git clone https://github.com/elenagarrone/thermostat.git
@@ -38,7 +50,15 @@ Change into the directory:
 ```shell
 $ cd thermostat
 ```
+Play with it on the console:
+```shell
+$ open SpecRunner.html
+```
+Right click on the page and select 'Inspect element', then click on 'Console'.
+
+How to test it:
+--------------
 Run:
 ```shell
-open SpecRunner.html
+$ open SpecRunner.html
 ```
