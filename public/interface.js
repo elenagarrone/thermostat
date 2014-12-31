@@ -10,12 +10,12 @@ function ThermostatView(element) {
 ThermostatView.prototype.bindTo = function(selector, obj, func) {
   $(selector).on('click', function() {
     $('h2.numbers').text(func.call(obj));
-        if(parseInt($('h2.numbers').text()) > 25)
-          $('.den').css('background-color', 'red');
-        else if(parseInt($('h2.numbers').text()) > 18)
-          $('.den').css('background-color', 'yellow');
-        else
-          $('.den').css('background-color', '#3ADF00');
+      if(parseInt($('h2.numbers').text()) > 25)
+        $('.den').css('background-color', 'red');
+      else if(parseInt($('h2.numbers').text()) > 18)
+        $('.den').css('background-color', 'yellow');
+      else
+        $('.den').css('background-color', '#3ADF00');
   });
 };
 
