@@ -1,22 +1,25 @@
 html, body { height: 100%; }
 
 body {
-    width: 240px;
-    margin: auto;
-    margin-top: 13%;
+  font-family: 'Dosis';
   background: #f2f2f2;
+  overflow: hidden;
+}
+
+section.thermostat {
+  width: 240px;
+  margin: 9% auto 9% auto;
 }
 
 /*============
     TITLE
  ============*/
 
-h1 {
-    margin-bottom: 20%;
-    text-align:center;
-    font-family: 'Dosis';
-    font-size: 200%;
-    color: #555;
+section#title {
+  margin: 0% 0% 20% 0%;
+  text-align: center;
+  font-size: 200%;
+  color: #555;
 }
 
 
@@ -24,85 +27,77 @@ h1 {
     THERMOSTAT
  ==============*/
 
-section.thermostat {
-    width:240px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
 article.container { width: 300px; margin: 10px auto 0; border: 2px black solid; }
 
-.de .den, .de .dene, .de .denem, .de .deneme {
-    position: absolute;
-    left: 50%; top: 50%; }
+.de .den, .de .dene, .de .denem, .de .deneme { position: absolute; left: 50%; top: 50%; }
 
 article.de {
-    position: relative;
-    width: 240px;
-    height: 240px;
-    border-radius: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    background-color: transparent;
-    margin-bottom: 15%;
+  position: relative;
+  width: 240px;
+  height: 240px;
+  border-radius: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  background-color: transparent;
 }
+
 article.den {
-    position: relative;
-    width: 210px;
-    height: 210px;
-    margin: -105px 0 0 -105px;
-    border-radius: 100%;
-    box-shadow: inset 0 2px 10px rgba(0, 0, 0, .5), 0 2px 20px rgba(255, 255, 255, 1);
-    background: yellow;
-    position:relative;
+  position: relative;
+  width: 210px;
+  height: 210px;
+  margin: -105px 0 0 -105px;
+  border-radius: 100%;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, .5), 0 2px 20px rgba(255, 255, 255, 1);
+  background: yellow;
 }
+
 article.dene {
-    width: 180px;
-    height: 180px;
-    margin: -90px 0 0 -90px;
-    border-radius: 100%;
-    box-shadow: inset 0 2px 2px rgba(255, 255, 255, .4), 0 3px 13px rgba(0, 0, 0, .85);
-    background: #f2f6f5;
-    background: -moz-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f6f5), color-stop(100%, #cbd5d6));
-    background: -webkit-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
-    background: -o-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
+  width: 180px;
+  height: 180px;
+  margin: -90px 0 0 -90px;
+  border-radius: 100%;
+  box-shadow: inset 0 2px 2px rgba(255, 255, 255, .4), 0 3px 13px rgba(0, 0, 0, .85);
+  background: #f2f6f5;
+  background: -moz-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f6f5), color-stop(100%, #cbd5d6));
+  background: -webkit-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
+  background: -o-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
 }
 article.denem {
-    width: 160px;
-    height: 160px;
-    margin: -80px 0 0 -80px;
-    border-radius: 100%;
-    background: #cbd5d6;
-    background: -moz-linear-gradient(top, #cbd5d6 0%, #f2f6f5 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cbd5d6), color-stop(100%, #f2f6f5));
-    background: -webkit-linear-gradient(top, #cbd5d6 0%, #f2f6f5 100%);
+  width: 160px;
+  height: 160px;
+  margin: -80px 0 0 -80px;
+  border-radius: 100%;
+  background: #cbd5d6;
+  background: -moz-linear-gradient(top, #cbd5d6 0%, #f2f6f5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cbd5d6), color-stop(100%, #f2f6f5));
+  background: -webkit-linear-gradient(top, #cbd5d6 0%, #f2f6f5 100%);
 }
 
 article.deneme {
-    padding: 3px 10px 0 10px;
-    width: 120px;
-    height: 137px;
-    display: inline-block;
-    margin: -70px 0 0 -70px;
-    color: #555;
-    text-shadow: 1px 1px 1px white;
-    font-family: 'Dosis';
-    font-size: 100px;
-    font-weight: 400;
-    text-align: center;
+  padding: 3px 10px 0 10px;
+  width: 120px;
+  height: 137px;
+  display: inline-block;
+  margin: -70px 0 0 -70px;
+  color: #555;
+  text-shadow: 1px 1px 1px white;
+  font-size: 100px;
+  font-weight: 400;
+  text-align: center;
 }
+
 article.deneme span { font-size: 30px; font-weight: 200; }
+
 article.deneme strong { position: absolute; right: 10px; top: 25px; font-size: 34px; }
+
 h2.numbers {
-    font-family: 'Dosis';
-    color: #555;
-    font-size: 100%;
-    margin-top: 3%;
+  color: #555;
+  font-size: 100%;
+  margin: 15% 0% 15% 0%;
 }
 
 section#rainbowbutton {
-    text-align: center;
+  margin: 0% 0% 15% 0%;
 }
 
 /*===============
@@ -110,43 +105,42 @@ section#rainbowbutton {
  ===============*/
 
 section.buttons {
-    width:108px;
-    font-family: 'Source Code Pro';
-    margin-top: 1%;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
+  width: 108px;
+  font-family: 'Source Code Pro';
+  margin: 0% auto 0% auto;
 }
 
 section.buttons a {
-    display:block;
-    width: 108px;
-    height: 30px;
-    text-decoration: none;
-    text-align:center;
-    display:table-cell;
-    vertical-align:middle;
-    border: 1px solid #D73A0C;
-    margin-bottom:5%;
-    background: rgb(223, 117, 20);
-    color: white;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  width: 108px;
+  height: 30px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  display: table-cell;
+  vertical-align: middle;
+  border: 1px solid #D73A0C;
+  background: rgb(223, 117, 20);
+  border-radius: 4px;
 }
+
+section.buttons a.increase_temperature:hover { background: rgb(223, 20, 20); }
+
+section.buttons a.decrease_temperature:hover { background: rgb(53, 207, 0); }
+
+section.buttons a.reset:hover { background: rgb(245, 234, 24); }
 
 /*=============
     CHECKBOX
  =============*/
 
 section.checkbox {
-    margin-top: 4%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 160px;
+  margin: 4% auto 0% auto;
+  width: 160px;
 }
 
 section.checkbox label.css-label {
-    font-family:Courier New;
-    color:#c92200;
-    font-size:15px;
+  font-family: Courier New;
+  color: #c92200;
+  font-size: 15px;
 }
