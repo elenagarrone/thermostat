@@ -50,11 +50,16 @@ Change into the directory:
 ```shell
 $ cd thermostat
 ```
-Play with it on the console:
+Install the gems:
 ```shell
-$ open SpecRunner.html
+$ bundle install
 ```
-Right click on the page and select 'Inspect element', then click on 'Console'.
+Try it on localhost:
+```shell
+$ rackup
+#then on the browser go to:
+localhost:4567
+```
 
 How to test it:
 --------------
