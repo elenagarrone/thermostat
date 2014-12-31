@@ -30,19 +30,23 @@ Thermostat.prototype.decreaseTemperatureBy = function(degrees) {
 };
 
 Thermostat.prototype.maxTempPowerSaverOff = function() {
-	return this.maximumTemperature = 32;
+	var max = this.maximumTemperature = 32;
+	return max;
 };
 
 Thermostat.prototype.tooglePowerSaving = function() {
 	if(this.isPowerSaverOn) {
 		this.maxTempPowerSaverOff();
-		return this.isPowerSaverOn = false;
+		var powerOff = this.isPowerSaverOn = false;
+		return powerOff;
 	} else {
 		this.maximumTemperature = 25;
-		return this.isPowerSaverOn = true;
+		var powerOn = this.isPowerSaverOn = true;
+		return powerOn;
 	}
 };
 
 Thermostat.prototype.resetTemp = function() {
-	return this.temperature = 20;
+	var temp = this.temperature = 20;
+	return temp;
 };
