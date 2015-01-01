@@ -4,7 +4,7 @@ Thermostat
 ==========
 During the sixth week of Makers Academy we had to build a thermostat using JavaScript and JQuery.
 
-<img src='http://i57.tinypic.com/14mc0pj.jpg'>
+<img src='public/images/thermostat.png'>
 
 
 Specification:
