@@ -7,8 +7,10 @@ body {
 }
 
 section.thermostat {
-  width: 240px;
-  margin: 7% auto 7% auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*============
@@ -18,7 +20,7 @@ section.thermostat {
 section#title {
   margin: 0% 0% 20% 0%;
   text-align: center;
-  font-size: 200%;
+  font-size: 2em;
   color: #555;
 }
 
@@ -91,7 +93,7 @@ article.deneme strong { position: absolute; right: 10px; top: 25px; font-size: 3
 
 h2.numbers {
   color: #555;
-  font-size: 100%;
+  font-size: 1em;
   margin: 15% 0% 15% 0%;
 }
 
@@ -141,5 +143,5 @@ section.checkbox {
 section.checkbox label.css-label {
   font-family: Courier New;
   color: #c92200;
-  font-size: 15px;
+  font-size: 0.938em;
 }
